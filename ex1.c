@@ -10,7 +10,7 @@ int main(){
     int min = (sec - 3600 * heures)/60;
     int sec_reste = sec - 3600*heures - 60 * min;
  
-    printf("%d secondes = %d heures, %d minutes et %d secondes", sec,heures, min , sec_reste);
+    printf("%d secondes fait %d heures, %d minutes et %d secondes", sec,heures, min , sec_reste);
     return 0;
  
 }
