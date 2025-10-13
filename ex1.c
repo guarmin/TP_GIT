@@ -1,8 +1,7 @@
 #include <stdio.h>
  
 int main(){
-   
-    /*Ex 1*/
+    
     int sec = 0;
     printf("Donnez un nombre de secondes : ");
     scanf("%d", &sec);
