@@ -12,3 +12,4 @@ int main() {
     printf("fait\n");
     return 0;
 }
+ /* l'erreur etait juste du au tableauc trop petit*/
