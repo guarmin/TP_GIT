@@ -11,3 +11,4 @@ int main() {
     }
     return 0;
 }
+/* le probleme est du a la division par 0 impossible donc l'ajout de if else resout cela */
