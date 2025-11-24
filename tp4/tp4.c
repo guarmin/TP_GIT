@@ -44,8 +44,22 @@ void SaisiNote(int NbEleve, int n[][3])
         {
 
             printf("    Note du controle %d (0 a 20) :", i);
-            scanf("%d", &n[i][0]);
+            scanf("%d", &n[j - 1][i - 1]);
         }
+    }
+}
+void affichernote(int note[][3], int NbEleve)
+{
+    printf("Tableau des notes\n");
+    printf("Eleve C1 C2 C3\n");
+    for (int i = 0; i < NbEleve; i++)
+    {
+        printf("    %d", i + 1);
+        for (int j = 0; j < 3; j++)
+        {
+            printf(" %d", note[i][j]);
+        }
+        printf("\n");
     }
 }
 int main()
@@ -55,5 +69,6 @@ int main()
     int nbeleve = NbEleve();
     int note[nbeleve][3];
     SaisiNote(nbeleve, note);
+    affichernote(note, nbeleve);
     return 0;
 }
