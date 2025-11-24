@@ -26,6 +26,7 @@ int NbEleve()
     if (nombre < 1 || nombre > 30)
     {
         printf("Valeur Invalide");
+        printf("\n");
         NbEleve();
     }
     else
@@ -33,10 +34,26 @@ int NbEleve()
         return nombre;
     }
 }
+void SaisiNote(int NbEleve, int n[][3])
+{
+    printf("saisie des notes pour %d eleves et 3 controles\n", NbEleve);
+    for (int j = 1; j < NbEleve + 1; j++)
+    {
+        printf("Eleve %d:\n", j);
+        for (int i = 1; i < 4; i++)
+        {
+
+            printf("    Note du controle %d (0 a 20) :", i);
+            scanf("%d", &n[i][0]);
+        }
+    }
+}
 int main()
 {
     affichage();
     LireChoix();
-    NbEleve();
+    int nbeleve = NbEleve();
+    int note[nbeleve][3];
+    SaisiNote(nbeleve, note);
     return 0;
 }
