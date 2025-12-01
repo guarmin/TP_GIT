@@ -12,9 +12,10 @@ void menu()
 }
 int choix()
 {
-    int choix();
+    int choix;
     printf("Votre choix : \n");
     scanf("%d", &choix);
+    return choix;
 }
 void initialiser(int tableau[])
 {
@@ -38,55 +39,8 @@ int ajouterConsommation(int tableau[])
     printf("7. Proteines 🍗\n");
     printf("Votre choix : ");
     scanf("%d", &choix);
-    switch (choix)
-    {
-    case 1:
-        printf("Combien d unites ajouter ? ");
-        scanf("%d", &quantite);
-        tableau[choix - 1] = tableau[choix - 1] + quantite;
-        printf("Consommation mise a jour\n");
-        break;
-
-    case 2:
-        printf("Combien d unites ajouter ? ");
-        scanf("%d", &quantite);
-        tableau[choix - 1] = tableau[choix - 1] + quantite;
-        printf("Consommation mise a jour\n");
-        break;
-
-    case 3:
-        printf("Combien d unites ajouter ? ");
-        scanf("%d", &quantite);
-        tableau[choix - 1] = tableau[choix - 1] + quantite;
-        printf("Consommation mise a jour\n");
-        break;
-
-    case 4:
-        printf("Combien d unites ajouter ? ");
-        scanf("%d", &quantite);
-        tableau[choix - 1] = tableau[choix - 1] + quantite;
-        printf("Consommation mise a jour\n");
-        break;
-
-    case 5:
-        printf("Combien d unites ajouter ? ");
-        scanf("%d", &quantite);
-        tableau[choix - 1] = tableau[choix - 1] + quantite;
-        printf("Consommation mise a jour\n");
-        break;
-
-    case 6:
-        printf("Combien d unites ajouter ? ");
-        scanf("%d", &quantite);
-        tableau[choix - 1] = tableau[choix - 1] + quantite;
-        printf("Consommation mise a jour\n");
-        break;
-
-    case 7:
-        printf("Combien d unites ajouter ? ");
-        scanf("%d", &quantite);
-        tableau[choix - 1] = tableau[choix - 1] + quantite;
-        printf("Consommation mise a jour\n");
-        break;
-    }
+    printf("Combien d unites ajouter ? \n");
+    scanf("%d", &quantite);
+    tableau[choix - 1] = tableau[choix - 1] + quantite;
+    printf("Consommation mise a jour\n");
 }

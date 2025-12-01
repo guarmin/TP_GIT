@@ -8,10 +8,10 @@
 
 void menu();
 int choix();
-void initialiser(int tab[]);
-int ajouterConsommation(int tab[]);
-void afficheResume(int tab[]);
-void charger(char nom[], int tab[]);
-void sauvegarder(char nom[], int tab[]);
+void initialiser(int tableau[]);
+int ajouterConsommation(int tableau[]);
+void afficheResume(int tableau[]);
+void charger(char nom[], int tableau[]);
+void sauvegarder(char nom[], int tableau[]);
 
 #endif
