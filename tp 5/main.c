@@ -7,7 +7,7 @@ int main()
     SetConsoleCP(CP_UTF8);
     setlocale(LC_ALL, ".UTF-8");
     int Choix = 0;
-    int tableau[7];
+    int tableau[7] = {0};
     while (Choix != 3)
     {
         menu();
@@ -15,6 +15,10 @@ int main()
         if (Choix == 1)
         {
             ajouterConsommation(tableau);
+        }
+        if (Choix == 2)
+        {
+            afficheResume(tableau);
         }
     }
 }

@@ -44,3 +44,15 @@ int ajouterConsommation(int tableau[])
     tableau[choix - 1] = tableau[choix - 1] + quantite;
     printf("Consommation mise a jour\n");
 }
+void afficheResume(int tableau[])
+{
+    printf("========== Resume du jour ==========\n");
+    printf("Eau       : %d\n", tableau[0]);
+    printf("Cafe      : %d\n", tableau[1]);
+    printf("Bonbons   : %d\n", tableau[2]);
+    printf("Gateau    : %d\n", tableau[3]);
+    printf("Legumes   : %d\n", tableau[4]);
+    printf("Fruits    : %d\n", tableau[5]);
+    printf("Proteines : %d\n", tableau[6]);
+    printf("====================================\n");
+}
