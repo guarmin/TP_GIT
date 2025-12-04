@@ -8,6 +8,16 @@ int main()
     setlocale(LC_ALL, ".UTF-8");
     int Choix = 0;
     int tableau[7] = {0};
+    if (charger("consommation.txt", tableau))
+    {
+        printf(" Donnees chargees avec succes\n");
+    }
+    else
+    {
+        printf(" Nouveau fichier créé\n");
+        initialiser(tableau);
+    }
+
     while (Choix != 3)
     {
         menu();
@@ -21,4 +31,14 @@ int main()
             afficheResume(tableau);
         }
     }
+    if (sauvegarder("consommation.txt", tableau))
+    {
+        printf("Donnees sauvegardees avec succes\n");
+    }
+    else
+    {
+        printf("Erreur lors de la sauvegarde\n");
+    }
+
+    return 0;
 }
