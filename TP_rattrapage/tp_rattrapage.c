@@ -15,11 +15,22 @@ int win = 0;
 
 char inscription(nomJoueur, ageJoueur, scoreJoueur, numeroMatch, joueur1, joueur2, win)
 {
-    for (int i = 0; i >= 7; i++)
+
+    for (int i = 0; i <= 7; i++)
     {
-        char tableauJoueur[nomJoueur];
+        char tableauJoueur[i][nomJoueur];
+        for (int j = 1; i <= 8; i++)
+        {
+            printf(" Veuillez entrez le nom du joueur %d: ", j);
+            scanf("%c", &nomJoueur);
+        }
+    }
+    for (int j = 0; j <= 7; j++)
+    {
+        int tableauAge[j][ageJoueur];
     }
 }
 int main()
 {
+    inscription();
 }
